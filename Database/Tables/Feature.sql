@@ -2,10 +2,11 @@
     [FeatureId]       BIGINT          IDENTITY (1, 1) NOT NULL,
     [FeatureName]     NVARCHAR (50)   NOT NULL,
     [FeatureValue]    NVARCHAR (100)  NULL,
-    [PageURL]         NVARCHAR (1024) NULL,
+    [PageUrl]         NVARCHAR (1024) NULL,
     [ParentFeatureId] BIGINT          NULL,
     [SeqNo]           INT             NULL,
-    [FeatureCSS]      NVARCHAR (100)  NULL,
+    [FeatureCss]      NVARCHAR (100)  NULL,
+    [IsActive] BIT NOT NULL DEFAULT 1, 
     CONSTRAINT [PK_Feature] PRIMARY KEY CLUSTERED ([FeatureId] ASC)
 );
 

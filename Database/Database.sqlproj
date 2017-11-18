@@ -67,12 +67,12 @@
     <Build Include="Tables\Contact.sql" />
     <Build Include="Tables\ContactType.sql" />
     <Build Include="Tables\Currency.sql" />
-    <Build Include="Tables\EMIPayment.sql" />
-    <Build Include="Tables\EMIRedeem.sql" />
-    <Build Include="Tables\ExpenseManagement.sql" />
+    <Build Include="Tables\EmiPayment.sql" />
+    <Build Include="Tables\EmiRedeem.sql" />
+    <Build Include="Tables\Expense.sql" />
     <Build Include="Tables\ExpenseType.sql" />
     <Build Include="Tables\Feature.sql" />
-    <Build Include="Tables\IncomeManagement.sql" />
+    <Build Include="Tables\Income.sql" />
     <Build Include="Tables\IncomeType.sql" />
     <Build Include="Tables\Location.sql" />
     <Build Include="Tables\Manufacturer.sql" />
@@ -87,9 +87,13 @@
     <Build Include="Tables\SaleReturnDetail.sql" />
     <Build Include="Tables\SubCategory.sql" />
     <Build Include="Tables\User.sql" />
+    <Build Include="Tables\ContactBalance.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Database.Sree.publish.xml" />
     <None Include="Database.Raj.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Database.refactorlog" />
   </ItemGroup>
 </Project>

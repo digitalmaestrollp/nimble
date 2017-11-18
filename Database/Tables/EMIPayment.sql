@@ -1,8 +1,10 @@
-﻿CREATE TABLE [dbo].[EMIPayment] (
-    [EMIPaymentId] BIGINT         NOT NULL,
+﻿CREATE TABLE [dbo].[EmiPayment] (
+    [EmiPaymentId] BIGINT         NOT NULL,
     [ContactId]    BIGINT         NOT NULL,
     [Amount]       MONEY          NOT NULL,
-    [Comments]     NVARCHAR (250) NULL,
+	[PaidDate]     DATETIME		NOT NULL,
+	[CurrencyId]   INT            NOT NULL,
+    [Comments]     NVARCHAR(250) NULL,
     [CreatedBy]    BIGINT         NOT NULL,
     [CreatedDate]  SMALLDATETIME  NOT NULL,
     CONSTRAINT [PK_EMIPayment] PRIMARY KEY CLUSTERED ([EMIPaymentId] ASC),

@@ -2,7 +2,7 @@
     [UserId]          BIGINT          IDENTITY (1, 1) NOT NULL,
     [UserAlias]       NVARCHAR (50)   NULL,
     [UserName]        NVARCHAR (255)  NOT NULL,
-    [Password]        NVARCHAR (50)   NULL,
+    [Password]        NVARCHAR (500)   NOT NULL,
     [EmailAddress]    NVARCHAR (1024) NULL,
     [IsActive]        BIT             NOT NULL,
     [RoleId]          BIGINT          NOT NULL,
