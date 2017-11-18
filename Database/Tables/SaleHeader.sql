@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[SaleHeader] (
+    [SaleId]           BIGINT         IDENTITY (1, 1) NOT NULL,
+    [LocationId]       BIGINT         NOT NULL,
+    [SONumber]         NVARCHAR (50)  NOT NULL,
+    [ContactId]        BIGINT         NOT NULL,
+    [IsPrintTax]       BIT            NULL,
+    [IsTaxIncluded]    BIT            NULL,
+    [SalesExec]        NVARCHAR (255) NULL,
+    [TotalAmount]      MONEY          NULL,
+    [TaxAmount]        MONEY          NULL,
+    [USDCashAmount]    MONEY          NULL,
+    [XCDCashAmount]    MONEY          NULL,
+    [GiftCardNumber]   NVARCHAR (50)  NULL,
+    [GiftCardAmount]   MONEY          NULL,
+    [CreditCardNumber] NVARCHAR (50)  NULL,
+    [CreditCardAmount] MONEY          NULL,
+    [ChequeNumber]     NVARCHAR (50)  NULL,
+    [ChequeAmount]     MONEY          NULL,
+    [AdditionalInfo]   NVARCHAR (250) NULL,
+    [Status]           NVARCHAR (50)  NULL,
+    [CreatedBy]        BIGINT         NULL,
+    [CreatedDateTime]  SMALLDATETIME  CONSTRAINT [DF_PrdouctDispatch_CreatedDateTime] DEFAULT (getdate()) NULL,
+    [UpdatedDateTime]  SMALLDATETIME  CONSTRAINT [DF_PrdouctDispatch_UpdatedDateTime] DEFAULT (getdate()) NULL,
+    CONSTRAINT [PK_PrdouctDispatch] PRIMARY KEY CLUSTERED ([SaleId] ASC)
+);
+
